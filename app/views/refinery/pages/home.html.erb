@@ -1,0 +1,17 @@
+<div id="content">
+	<div id="nav">
+		<%= render(:partial => "/refinery/menu", :locals => {
+             :dom_id => 'menu',
+             :css => 'menu'
+           }) %>
+	</div>
+
+	<section id='body_content'>
+		<%=raw @page.content_for(:body) %>
+	</section>
+
+	<section id='side_body_content'>
+		<h1>Side boyd</h1>
+		<%=raw @page.content_for(:side_body) %>
+	</section>
+</div>
