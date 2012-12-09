@@ -9,8 +9,6 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-gem 'activerecord-postgresql-adapter'
-gem 'pg'
 gem 'capistrano'
 
 # Gems used only for assets and not required
