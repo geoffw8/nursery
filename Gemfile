@@ -9,6 +9,8 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+gem 'activerecord-postgresql-adapter'
+gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -52,6 +54,3 @@ gem 'refinerycms-i18n', '~> 2.0.0'
 group :development do
   gem 'taps', :require => false # has an sqlite dependency, which heroku hates
 end
-
-gem 'activerecord-postgresql-adapter'
-gem 'pg'
