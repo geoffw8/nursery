@@ -48,3 +48,10 @@ gem 'refinerycms-i18n', '~> 2.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
+
+group :development do
+  gem 'taps', :require => false # has an sqlite dependency, which heroku hates
+end
+
+gem 'activerecord-postgresql-adapter'
+gem 'pg'
